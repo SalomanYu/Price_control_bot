@@ -1,7 +1,5 @@
 from time import sleep
-from click import pass_context
 import gspread
-from jinja2 import pass_environment
 from oauth2client.service_account import ServiceAccountCredentials
 
 import requests
