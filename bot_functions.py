@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 def auth_spread():
     scope = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name('/home/saloman/Documents/Business Automatization/Wildberries(Work)/BOT_finance/Service Accounts/morbot-338716-b219142d9c70.json')
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(r'Service Accounts/morbot-338716-b219142d9c70.json')
 
     gc = gspread.authorize(credentials)
     spread = gc.open_by_key('1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM') # Расчеты
