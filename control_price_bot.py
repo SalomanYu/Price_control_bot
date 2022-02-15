@@ -26,7 +26,7 @@ async def check_price(message: types.Message):
     worksheets = spread.worksheets()[:3]
     for sheet in worksheets:
         wrong_data = bot_functions.get_worksheet_order_info(sheet)
-        await message.answer(f'☝️ Информация по "{sheet.title}"')
+        await message.answer(f'👇 Информация по "{sheet.title}"')
         if wrong_data == []:
             await message.answer('😌 Совпадают все цены')
             continue

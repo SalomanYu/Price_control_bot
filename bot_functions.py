@@ -81,14 +81,23 @@ def get_worksheet_order_info(sheet):
                     'wb_price': wb_price,
                     'url': url
                 })
-            
+
                 print(f'НЕ СОВПАДАЕТ цена для {article}: {wb_price} - {order["client_price"]}')
         except AttributeError:
             print('Товара нет в наличии: ', article)
+            # print(article, url)
+
             wrong_prices.append({
                     'article': article,
                     'price': order['client_price'],
                     'wb_price': 'Товара нет в наличии',
-                    'url': url
+                    'url': f'https://www.wildberries.ru/catalog/{article}/detail.aspx?targetUrl=SP'
                     })
     return wrong_prices 
+
+
+if __name__ == '__main__':
+    spread = auth_spread()
+    work = spread.worksheets()[:3]
+    get_worksheet_order_info(work[1])
+    
