@@ -89,7 +89,7 @@ def get_worksheet_order_info(sheet):
 
                 logging.warning(f'НЕ СОВПАДАЕТ цена для {article}: {wb_price} - {order["client_price"]}')
         except AttributeError:
-            logging.warning('Товара нет в наличии: ', article)
+            logging.warning(f'Товара нет в наличии: {article}')
             # print(article, url)
 
             wrong_prices.append({
