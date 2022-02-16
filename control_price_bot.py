@@ -1,12 +1,14 @@
 from aiogram import Bot, Dispatcher, executor, types
+
 import logging
-
 import os
-
 
 import bot_functions 
 
-logging.basicConfig(level=logging.INFO)
+logger=logging.getLogger('CopasiTools')
+logger.setLevel(logging.DEBUG)
+handler=logging.FileHandler('output.log',mode='w')
+logger.addHandler(handler)
 
 TOKEN  = os.getenv('PRICE_CONTROL_BOT_TOKEN')
 bot = Bot(TOKEN)

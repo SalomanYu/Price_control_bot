@@ -2,8 +2,12 @@ from time import sleep
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
+import logging
 import requests
 from bs4 import BeautifulSoup
+
+
+logging.basicConfig(filename='output.log', level=logging.DEBUG, format='')
 
 
 def auth_spread():
@@ -26,7 +30,7 @@ def get_worksheet_ids(worksheet):
             return id_orders, client_price_col
 
         except gspread.exceptions.APIError:
-            print('Превышен лимит запросов.')
+            logging.warning('Превышен лимит запросов.')
             sleep(30)
             get_ids(worksheet)
     
@@ -40,9 +44,9 @@ def get_worksheet_ids(worksheet):
                     "article": id,
                     'client_price': order_client_price.replace(u'\xa0', '')
                 })
-                print('Записан ', id)
+                logging.info(f'Записан: {id}')
         except gspread.exceptions.APIError:
-            print('Превышен лимит по API')
+            logging.warning('Превышен лимит по API')
             sleep(20)
             get_client_price(id, price_col)
 
@@ -73,8 +77,9 @@ def get_worksheet_order_info(sheet):
             wb_price, url = parse_wildberries_by_order(article)
             wb_price = wb_price.replace(u'\xa0', u'')
             if wb_price == order['client_price']:
-                print(f'Цена для {article} совпадает: {wb_price} - {order["client_price"]}')
+                logging.info(f'Цена для {article} совпадает: {wb_price} - {order["client_price"]}')
             else:
+                print(wb_price, order['client_price'])
                 wrong_prices.append({
                     'article': article,
                     'price': order['client_price'],
@@ -82,9 +87,9 @@ def get_worksheet_order_info(sheet):
                     'url': url
                 })
 
-                print(f'НЕ СОВПАДАЕТ цена для {article}: {wb_price} - {order["client_price"]}')
+                logging.warning(f'НЕ СОВПАДАЕТ цена для {article}: {wb_price} - {order["client_price"]}')
         except AttributeError:
-            print('Товара нет в наличии: ', article)
+            logging.warning('Товара нет в наличии: ', article)
             # print(article, url)
 
             wrong_prices.append({
