@@ -1,0 +1,13 @@
+Using selector: EpollSelector
+Make request: "getMe" with data: "{}" and files "None"
+Response for getMe: [200] "'{"ok":true,"result":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}'"
+Bot: Oko_WB [@Oko_WB_bot]
+Make request: "getWebhookInfo" with data: "{}" and files "None"
+Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+Make request: "getUpdates" with data: "{'offset': -1, 'timeout': 1}" and files "None"
+Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+Updates were skipped successfully.
+Start polling.
+Make request: "getWebhookInfo" with data: "{}" and files "None"
+Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"

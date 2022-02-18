@@ -41,5 +41,5 @@ async def check_price(message: types.Message):
     await message.answer('✅ Проверка закончилась')
     print('Проверка закончилась.')
 if __name__ == '__main__':
-    print('Бот запущен.')
+    print('Бот запущен. Все логи записываются в файл output.log')
     executor.start_polling(dp, skip_updates=True)   
