@@ -63,46 +63,58 @@ def parse_wildberries_by_order(article):
     url = f'https://www.wildberries.ru/catalog/{article}/detail.aspx?targetUrl=SP'
     request = requests.get(url)
     soup = BeautifulSoup(request.text, 'lxml')
-    wb_price = soup.find('span', class_='price-block__final-price').text.split('₽')[0].strip()
-    
+    try:
+        wb_price = soup.find('span', class_='price-block__final-price')
+        status = request.status_code
+        if status == 429:
+            sleep(10)
+            request = requests.get(url)
+            soup = BeautifulSoup(request.text, 'lxml')
+            wb_price = soup.find('span', class_='price-block__final-price').text.split('₽')[0].strip().replace(u'\xa0', u'')
+        else:
+            wb_price = wb_price.text.split('₽')[0].strip().replace(u'\xa0', u'')
+    except AttributeError:
+        wb_price = soup.find('span', class_='sold-out-product__text').text.replace(u'\xa0', u'')
+
     return wb_price, url
+
+
 
 
 def get_worksheet_order_info(sheet):
     wrong_prices = []
     data_orders = get_worksheet_ids(sheet)
+    # print(data_orders)
+    # data_orders = [{'article': '40579043', 'client_price': '481'}, {'article': '41158021', 'client_price': '340'}, {'article': '41228775', 'client_price': '299'}, {'article': '41240866', 'client_price': '494'}, {'article': '43257800', 'client_price': '1292'}, {'article': '43268541', 'client_price': '1292'}, {'article': '45806492', 'client_price': '1998'}, {'article': '43498940', 'client_price': '491'}, {'article': '43501647', 'client_price': '307'}, {'article': '43742573', 'client_price': '554'}, {'article': '43742793', 'client_price': '316'}, {'article': '43745146', 'client_price': '421'}, {'article': '43745147', 'client_price': '421'}, {'article': '43745690', 'client_price': '421'}, {'article': '43745691', 'client_price': '421'}, {'article': '43860422', 'client_price': '324'}, {'article': '48564403', 'client_price': '324'}, {'article': '48566203', 'client_price': '217'}, {'article': '49234031', 'client_price': '424'}, {'article': '49234032', 'client_price': '424'}, {'article': '51460785', 'client_price': '778'}, {'article': '41797971', 'client_price': '373'}, {'article': '48105035', 'client_price': '300'}, {'article': '52451400', 'client_price': '1371'}, {'article': '54624031', 'client_price': '1371'}, {'article': '54624443', 'client_price': '1371'}, {'article': '54624699', 'client_price': '1371'}, {'article': '46451469', 'client_price': '867'}, {'article': '64048538', 'client_price': '2238'}, {'article': '46584126', 'client_price': '2599'}, {'article': '64307641', 'client_price': '2599'}, {'article': '48059401', 'client_price': '883'}, {'article': '43968564', 'client_price': '580'}, {'article': '43973145', 'client_price': '447'}, {'article': '43973146', 'client_price': '447'}, {'article': '61162427', 'client_price': '1086'}, {'article': '61165876', 'client_price': '728'}, {'article': '61200309', 'client_price': '994'}]
     for order in data_orders:
-        article = order['article']
-        try:
-            wb_price, url = parse_wildberries_by_order(article)
-            wb_price = wb_price.replace(u'\xa0', u'')
-            if wb_price == order['client_price']:
-                logging.info(f'Цена для {article} совпадает: {wb_price} - {order["client_price"]}')
-            else:
-                print(wb_price, order['client_price'])
-                wrong_prices.append({
-                    'article': article,
+        wb_price, url = parse_wildberries_by_order(order['article'])
+        if wb_price == 'Товара нет вналичии':
+            logging.warning(f'Товара нет в наличии - {order["article"]}')
+            # print('нет в наличии ', order)
+            wrong_prices.append({
+                    'article': order['article'],
                     'price': order['client_price'],
                     'wb_price': wb_price,
                     'url': url
                 })
 
-                logging.warning(f'НЕ СОВПАДАЕТ цена для {article}: {wb_price} - {order["client_price"]}')
-        except AttributeError:
-            logging.warning(f'Товара нет в наличии: {article}')
-            # print(article, url)
+        elif int(wb_price) == int(order['client_price']):
+            logging.info(f"Всё гуд для - {order['client_price']}")
 
+        else:
+            logging.warning(f"Неверная цена у - {order['client_price']}")
             wrong_prices.append({
-                    'article': article,
+                    'article': order['article'],
                     'price': order['client_price'],
-                    'wb_price': 'Товара нет в наличии',
-                    'url': f'https://www.wildberries.ru/catalog/{article}/detail.aspx?targetUrl=SP'
-                    })
+                    'wb_price': wb_price,
+                    'url': url
+                })
+        
     return wrong_prices 
 
 
 if __name__ == '__main__':
     spread = auth_spread()
-    work = spread.worksheets()[:3]
-    get_worksheet_order_info(work[1])
+    work = spread.worksheets()
+    print(get_worksheet_order_info(work[0]))
     

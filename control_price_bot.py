@@ -11,8 +11,9 @@ handler=logging.FileHandler('output.log',mode='w')
 logger.addHandler(handler)
 
 TOKEN  = os.getenv('PRICE_CONTROL_BOT_TOKEN')
-bot = Bot(TOKEN)
+bot = Bot('5056907976:AAHuRGD-gWhNg4fmZl3eCaNbH2_aYEB2fx4')
 dp = Dispatcher(bot)
+
 
 
 @dp.message_handler(commands=['start'])
@@ -38,5 +39,7 @@ async def check_price(message: types.Message):
             await message.answer(notification)
 
     await message.answer('✅ Проверка закончилась')
+    print('Проверка закончилась.')
 if __name__ == '__main__':
+    print('Бот запущен.')
     executor.start_polling(dp, skip_updates=True)   
