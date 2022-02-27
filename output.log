@@ -11,11 +11,11 @@ Start polling.
 Make request: "getWebhookInfo" with data: "{}" and files "None"
 Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
 Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":983234702,\n"message":{"message_id":507,"from":{"id":544490770,"is_bot":false,"first_name":"Rosya","username":"salomanHere","language_code":"ru"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730178,"text":"/check_client_price","entities":[{"offset":0,"length":19,"type":"bot_command"}]}}]}'"
+Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":983234705,\n"message":{"message_id":549,"from":{"id":544490770,"is_bot":false,"first_name":"Rosya","username":"salomanHere","language_code":"ru"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645988646,"text":"/check_client_price","entities":[{"offset":0,"length":19,"type":"bot_command"}]}}]}'"
 Received 1 updates.
 Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '🕓 Я начал сравнивать цены. Подождите...'}" and files "None"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":508,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730178,"text":"\\ud83d\\udd53 \\u042f \\u043d\\u0430\\u0447\\u0430\\u043b \\u0441\\u0440\\u0430\\u0432\\u043d\\u0438\\u0432\\u0430\\u0442\\u044c \\u0446\\u0435\\u043d\\u044b. \\u041f\\u043e\\u0434\\u043e\\u0436\\u0434\\u0438\\u0442\\u0435..."}}'"
+Make request: "getUpdates" with data: "{'offset': 983234706, 'timeout': 20}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":550,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645988647,"text":"\\ud83d\\udd53 \\u042f \\u043d\\u0430\\u0447\\u0430\\u043b \\u0441\\u0440\\u0430\\u0432\\u043d\\u0438\\u0432\\u0430\\u0442\\u044c \\u0446\\u0435\\u043d\\u044b. \\u041f\\u043e\\u0434\\u043e\\u0436\\u0434\\u0438\\u0442\\u0435..."}}'"
 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
 Making request: POST https://oauth2.googleapis.com/token
 Starting new HTTPS connection (1): oauth2.googleapis.com:443
@@ -23,129 +23,122 @@ https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
 Starting new HTTPS connection (1): sheets.googleapis.com:443
 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM?includeGridData=false HTTP/1.1" 200 None
 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM?includeGridData=false HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21A1%3AA?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z4?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21A1%3AA?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z4?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 40579043
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z5?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z5?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 41158021
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z6?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z6?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 41228775
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z7?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z7?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 41240866
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z8?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z8?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43257800
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z9?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z9?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43268541
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z10?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z10?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 45806492
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z11?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z11?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43498940
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z12?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z12?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43501647
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z13?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z13?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43742573
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z14?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z14?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43742793
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z15?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z15?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43745146
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z16?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z16?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43745147
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z17?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z17?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43745690
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z18?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z18?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43745691
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z19?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z19?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43860422
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z20?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z20?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 48564403
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z21?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z21?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 48566203
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z22?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z22?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 49234031
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z23?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z23?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 49234032
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z24?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z24?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 51460785
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z25?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z25?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 41797971
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z26?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z26?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 48105035
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 52451400
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z28?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z28?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 54624031
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z29?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z29?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 54624443
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z30?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z30?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 54624699
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z31?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z31?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 46451469
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z32?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z32?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 64048538
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z33?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z33?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 46584126
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z34?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z34?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z34?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 64307641
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z35?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z35?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 48059401
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z36?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z36?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43968564
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z37?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z37?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43973145
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z38?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z38?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 43973146
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z39?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z39?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 61162427
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z40?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z40?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 61165876
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21Z41?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z41?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 61200309
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/40579043/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
@@ -167,7 +160,7 @@ https://www.wildberries.ru:443 "GET /catalog/43268541/detail.aspx?targetUrl=SP H
 Всё гуд для - 1097
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/45806492/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 1998
+Всё гуд для - 2197
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/43498940/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
 Всё гуд для - 491
@@ -233,7 +226,7 @@ https://www.wildberries.ru:443 "GET /catalog/46451469/detail.aspx?targetUrl=SP H
 Всё гуд для - 867
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/64048538/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 2326
+Всё гуд для - 4170
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/46584126/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
 Всё гуд для - 2599
@@ -261,222 +254,170 @@ https://www.wildberries.ru:443 "GET /catalog/61165876/detail.aspx?targetUrl=SP H
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/61200309/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
 Всё гуд для - 994
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '👇 Информация по "WB FBS / FBO Алекс (7%) (копия)"'}" and files "None"
-Cause exception while getting updates.
-Traceback (most recent call last):
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/connector.py", line 986, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1025, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1010, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 924, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.8/asyncio/selector_events.py", line 496, in sock_connect
-    return await fut
-  File "/usr/lib/python3.8/asyncio/selector_events.py", line 501, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiogram/bot/api.py", line 139, in make_request
-    async with session.post(url, data=req, **kwargs) as response:
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/client.py", line 1138, in __aenter__
-    self._resp = await self._coro
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/client.py", line 535, in _request
-    conn = await self._connector.connect(
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/connector.py", line 542, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/connector.py", line 907, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/connector.py", line 1206, in _create_direct_connection
-    raise last_exc
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
-    transp, proto = await self._wrap_create_connection(
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiohttp/connector.py", line 992, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
-    updates = await self.bot.get_updates(
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
-    result = await self.request(api.Methods.GET_UPDATES, payload)
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiogram/bot/base.py", line 226, in request
-    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
-  File "/home/saloman/.local/lib/python3.8/site-packages/aiogram/bot/api.py", line 142, in make_request
-    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
-aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":509,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730300,"text":"\\ud83d\\udc47 \\u0418\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044f \\u043f\\u043e \\"WB FBS / FBO \\u0410\\u043b\\u0435\\u043a\\u0441 (7%) (\\u043a\\u043e\\u043f\\u0438\\u044f)\\""}}'"
+Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '👇 Информация по "WB FBS / FBO Алекс (7%)"'}" and files "None"
+Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+Make request: "getUpdates" with data: "{'offset': 983234706, 'timeout': 20}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":551,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645988862,"text":"\\ud83d\\udc47 \\u0418\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044f \\u043f\\u043e \\"WB FBS / FBO \\u0410\\u043b\\u0435\\u043a\\u0441 (7%)\\""}}'"
 Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '😌 Совпадают все цены'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":510,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730300,"text":"\\ud83d\\ude0c \\u0421\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442 \\u0432\\u0441\\u0435 \\u0446\\u0435\\u043d\\u044b"}}'"
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21A1%3AA?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE4?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":552,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645988863,"text":"\\ud83d\\ude0c \\u0421\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442 \\u0432\\u0441\\u0435 \\u0446\\u0435\\u043d\\u044b"}}'"
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21A1%3AA?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE4?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27146754
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE5?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE5?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27150374
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE6?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE6?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27157425
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE7?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE7?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27158829
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE8?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE8?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27159211
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE9?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE9?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27159408
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE10?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE10?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27566428
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE11?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE11?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27592601
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE12?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE12?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27592692
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE13?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE13?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27593089
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE14?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE14?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27603592
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE15?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE15?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27925738
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE16?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE16?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 27995088
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE17?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE17?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28270893
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE18?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE18?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28762471
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE19?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE19?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28764480
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE20?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE20?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28884415
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE21?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE21?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28885569
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE22?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE22?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28886180
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE23?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE23?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 28886455
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE24?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE24?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 29078914
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE25?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE25?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 29082777
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE26?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE26?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 29091753
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 29227949
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE28?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE28?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 29228169
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE29?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE29?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 30382710
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE30?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE30?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 31488326
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE31?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE31?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 32025561
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE32?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE32?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 32025660
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE33?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE33?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 32313436
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE34?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE34?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 32738413
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE36?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE36?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE36?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 33308756
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE37?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE37?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 34541750
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE38?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE38?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 35999679
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE39?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE39?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 36122116
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE40?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE40?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 36867918
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE41?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE41?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 36908863
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE42?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE42?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 37018634
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE43?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE43?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 36928148
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE44?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE44?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 37015446
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE45?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE45?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 37117750
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE46?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE46?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 38309284
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE47?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE47?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 38315139
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE48?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE48?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 38342524
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE49?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE49?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 40410223
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE50?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE50?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 40415168
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE51?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE51?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 40576431
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE52?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE52?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 40653359
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE53?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE53?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 41460499
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE54?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE54?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 30163313
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE55?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE55?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 39726847
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%20%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29%27%21AE56?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%95%D1%80%D0%BC%20%2816%25%29%27%21AE56?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
 Записан: 39406146
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/27146754/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
@@ -528,7 +469,7 @@ https://www.wildberries.ru:443 "GET /catalog/28764480/detail.aspx?targetUrl=SP H
 Всё гуд для - 249
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/28884415/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 249
+Товара нет в наличии - 28884415
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/28885569/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
 Всё гуд для - 249
@@ -634,368 +575,58 @@ https://www.wildberries.ru:443 "GET /catalog/39726847/detail.aspx?targetUrl=SP H
 Starting new HTTPS connection (1): www.wildberries.ru:443
 https://www.wildberries.ru:443 "GET /catalog/39406146/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
 Всё гуд для - 499
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '👇 Информация по "WB FBS / FBO Ерм (16%) (копия)"'}" and files "None"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":511,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730422,"text":"\\ud83d\\udc47 \\u0418\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044f \\u043f\\u043e \\"WB FBS / FBO \\u0415\\u0440\\u043c (16%) (\\u043a\\u043e\\u043f\\u0438\\u044f)\\""}}'"
+Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '👇 Информация по "WB FBS / FBO Ерм (16%)"'}" and files "None"
+Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+Make request: "getUpdates" with data: "{'offset': 983234706, 'timeout': 20}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":553,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645989003,"text":"\\ud83d\\udc47 \\u0418\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044f \\u043f\\u043e \\"WB FBS / FBO \\u0415\\u0440\\u043c (16%)\\""}}'"
+Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 28884415\nЦена в таблице: 249\nЦена WB: Товара нет вналичии\nСсылка на товар: https://www.wildberries.ru/catalog/28884415/detail.aspx?targetUrl=SP'}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":554,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645989003,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 28884415\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 249\\n\\u0426\\u0435\\u043d\\u0430 WB: \\u0422\\u043e\\u0432\\u0430\\u0440\\u0430 \\u043d\\u0435\\u0442 \\u0432\\u043d\\u0430\\u043b\\u0438\\u0447\\u0438\\u0438\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/28884415/detail.aspx?targetUrl=SP","entities":[{"offset":104,"length":68,"type":"url"}]}}'"
 Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 37117750\nЦена в таблице: 362\nЦена WB: Товара нет вналичии\nСсылка на товар: https://www.wildberries.ru/catalog/37117750/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":512,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730422,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 37117750\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 362\\n\\u0426\\u0435\\u043d\\u0430 WB: \\u0422\\u043e\\u0432\\u0430\\u0440\\u0430 \\u043d\\u0435\\u0442 \\u0432\\u043d\\u0430\\u043b\\u0438\\u0447\\u0438\\u0438\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/37117750/detail.aspx?targetUrl=SP","entities":[{"offset":104,"length":68,"type":"url"}]}}'"
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21A1%3AA?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z4?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 40579043
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z5?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 41158021
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z6?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 41228775
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z7?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 41240866
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z8?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43257800
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z9?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43268541
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z10?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 45806492
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z11?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43498940
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z12?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43501647
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z13?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43742573
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z14?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43742793
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z15?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43745146
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z16?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43745147
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z17?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43745690
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z18?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43745691
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z19?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43860422
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z20?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 48564403
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z21?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 48566203
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z22?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 49234031
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z23?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 49234032
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z24?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 51460785
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z25?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 41797971
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z26?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 48105035
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z27?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 52451400
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z28?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 54624031
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z29?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 54624443
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z30?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 54624699
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z31?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 46451469
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z32?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 64048538
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z33?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 46584126
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z34?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 64307641
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z35?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 429 None
-Превышен лимит по API
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z35?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 48059401
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z36?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43968564
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z37?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43973145
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z38?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 43973146
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z39?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 61162427
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z40?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 61165876
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27 HTTP/1.1" 200 None
-https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%20%287%25%29%27%21Z41?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
-Записан: 61200309
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":555,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645989004,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 37117750\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 362\\n\\u0426\\u0435\\u043d\\u0430 WB: \\u0422\\u043e\\u0432\\u0430\\u0440\\u0430 \\u043d\\u0435\\u0442 \\u0432\\u043d\\u0430\\u043b\\u0438\\u0447\\u0438\\u0438\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/37117750/detail.aspx?targetUrl=SP","entities":[{"offset":104,"length":68,"type":"url"}]}}'"
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21A1%3AA?valueRenderOption=FORMATTED_VALUE&majorDimension=COLUMNS HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21Z4?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Записан: 53486164
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21Z5?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Записан: 53444433
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21Z6?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Записан: 53451240
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21Z7?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Записан: 53445760
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21Z8?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Записан: 53430483
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27 HTTP/1.1" 200 None
+https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1bGbNieNgqDNSORaphLhLOHUbIUE00yxA0q_b4HsNclM/values/%27WB%20FBS%20%2F%20FBO%20Dushka%20%286%25%29%27%21Z9?valueRenderOption=FORMATTED_VALUE HTTP/1.1" 200 None
+Записан: 53485254
 Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/40579043/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 481
+https://www.wildberries.ru:443 "GET /catalog/53486164/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
+Всё гуд для - 763
 Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/41158021/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 340
+https://www.wildberries.ru:443 "GET /catalog/53444433/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
+Всё гуд для - 763
 Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/41228775/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 299
+https://www.wildberries.ru:443 "GET /catalog/53451240/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
+Всё гуд для - 840
 Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/41240866/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 1104
+https://www.wildberries.ru:443 "GET /catalog/53445760/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
+Всё гуд для - 763
 Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43257800/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 1097
+https://www.wildberries.ru:443 "GET /catalog/53430483/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
+Всё гуд для - 693
 Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43268541/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 1097
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/45806492/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 1998
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43498940/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 491
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43501647/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 307
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43742573/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 554
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43742793/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 316
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43745146/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 421
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43745147/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 421
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43745690/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 421
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43745691/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 421
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43860422/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 324
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/48564403/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 324
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/48566203/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 217
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/49234031/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 424
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/49234032/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 424
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/51460785/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 778
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/41797971/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 373
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/48105035/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 300
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/52451400/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 1371
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/54624031/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 1371
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/54624443/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 1371
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/54624699/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 1371
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/46451469/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 867
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/64048538/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 2326
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/46584126/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 2599
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/64307641/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 2599
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/48059401/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 883
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43968564/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Неверная цена у - 580
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43973145/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 447
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/43973146/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 447
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/61162427/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 1086
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/61165876/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 728
-Starting new HTTPS connection (1): www.wildberries.ru:443
-https://www.wildberries.ru:443 "GET /catalog/61200309/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
-Всё гуд для - 994
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '👇 Информация по "WB FBS / FBO Алекс (7%)"'}" and files "None"
+https://www.wildberries.ru:443 "GET /catalog/53485254/detail.aspx?targetUrl=SP HTTP/1.1" 200 None
+Всё гуд для - 693
+Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '👇 Информация по "WB FBS / FBO Dushka (6%)"'}" and files "None"
 Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":513,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730540,"text":"\\ud83d\\udc47 \\u0418\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044f \\u043f\\u043e \\"WB FBS / FBO \\u0410\\u043b\\u0435\\u043a\\u0441 (7%)\\""}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 41158021\nЦена в таблице: 340\nЦена WB: 356\nСсылка на товар: https://www.wildberries.ru/catalog/41158021/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":514,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730540,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 41158021\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 340\\n\\u0426\\u0435\\u043d\\u0430 WB: 356\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/41158021/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 41240866\nЦена в таблице: 1104\nЦена WB: 1375\nСсылка на товар: https://www.wildberries.ru/catalog/41240866/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":515,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730540,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 41240866\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 1104\\n\\u0426\\u0435\\u043d\\u0430 WB: 1375\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/41240866/detail.aspx?targetUrl=SP","entities":[{"offset":90,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43501647\nЦена в таблице: 307\nЦена WB: 356\nСсылка на товар: https://www.wildberries.ru/catalog/43501647/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":516,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730540,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43501647\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 307\\n\\u0426\\u0435\\u043d\\u0430 WB: 356\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43501647/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43742573\nЦена в таблице: 554\nЦена WB: 649\nСсылка на товар: https://www.wildberries.ru/catalog/43742573/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":517,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730540,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43742573\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 554\\n\\u0426\\u0435\\u043d\\u0430 WB: 649\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43742573/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43742793\nЦена в таблице: 316\nЦена WB: 359\nСсылка на товар: https://www.wildberries.ru/catalog/43742793/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":518,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730541,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43742793\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 316\\n\\u0426\\u0435\\u043d\\u0430 WB: 359\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43742793/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43745146\nЦена в таблице: 421\nЦена WB: 486\nСсылка на товар: https://www.wildberries.ru/catalog/43745146/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":519,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730541,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43745146\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 421\\n\\u0426\\u0435\\u043d\\u0430 WB: 486\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43745146/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43745147\nЦена в таблице: 421\nЦена WB: 486\nСсылка на товар: https://www.wildberries.ru/catalog/43745147/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":520,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730541,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43745147\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 421\\n\\u0426\\u0435\\u043d\\u0430 WB: 486\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43745147/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43745690\nЦена в таблице: 421\nЦена WB: 486\nСсылка на товар: https://www.wildberries.ru/catalog/43745690/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":521,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730542,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43745690\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 421\\n\\u0426\\u0435\\u043d\\u0430 WB: 486\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43745690/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43745691\nЦена в таблице: 421\nЦена WB: 486\nСсылка на товар: https://www.wildberries.ru/catalog/43745691/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":522,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730542,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43745691\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 421\\n\\u0426\\u0435\\u043d\\u0430 WB: 486\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43745691/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43860422\nЦена в таблице: 324\nЦена WB: 380\nСсылка на товар: https://www.wildberries.ru/catalog/43860422/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":523,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730543,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43860422\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 324\\n\\u0426\\u0435\\u043d\\u0430 WB: 380\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43860422/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 48564403\nЦена в таблице: 324\nЦена WB: 380\nСсылка на товар: https://www.wildberries.ru/catalog/48564403/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":524,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730543,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 48564403\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 324\\n\\u0426\\u0435\\u043d\\u0430 WB: 380\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/48564403/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 48566203\nЦена в таблице: 217\nЦена WB: 259\nСсылка на товар: https://www.wildberries.ru/catalog/48566203/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":525,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730543,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 48566203\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 217\\n\\u0426\\u0435\\u043d\\u0430 WB: 259\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/48566203/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 49234031\nЦена в таблице: 424\nЦена WB: 474\nСсылка на товар: https://www.wildberries.ru/catalog/49234031/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":526,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730543,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 49234031\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 424\\n\\u0426\\u0435\\u043d\\u0430 WB: 474\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/49234031/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 49234032\nЦена в таблице: 424\nЦена WB: 474\nСсылка на товар: https://www.wildberries.ru/catalog/49234032/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":527,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730543,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 49234032\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 424\\n\\u0426\\u0435\\u043d\\u0430 WB: 474\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/49234032/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 51460785\nЦена в таблице: 778\nЦена WB: 889\nСсылка на товар: https://www.wildberries.ru/catalog/51460785/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":528,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730544,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 51460785\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 778\\n\\u0426\\u0435\\u043d\\u0430 WB: 889\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/51460785/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 41797971\nЦена в таблице: 373\nЦена WB: 485\nСсылка на товар: https://www.wildberries.ru/catalog/41797971/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":529,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730544,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 41797971\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 373\\n\\u0426\\u0435\\u043d\\u0430 WB: 485\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/41797971/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 48105035\nЦена в таблице: 300\nЦена WB: 349\nСсылка на товар: https://www.wildberries.ru/catalog/48105035/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":530,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730544,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 48105035\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 300\\n\\u0426\\u0435\\u043d\\u0430 WB: 349\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/48105035/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 52451400\nЦена в таблице: 1371\nЦена WB: 1498\nСсылка на товар: https://www.wildberries.ru/catalog/52451400/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":531,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730544,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 52451400\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 1371\\n\\u0426\\u0435\\u043d\\u0430 WB: 1498\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/52451400/detail.aspx?targetUrl=SP","entities":[{"offset":90,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 54624031\nЦена в таблице: 1371\nЦена WB: 1498\nСсылка на товар: https://www.wildberries.ru/catalog/54624031/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":532,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730544,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 54624031\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 1371\\n\\u0426\\u0435\\u043d\\u0430 WB: 1498\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/54624031/detail.aspx?targetUrl=SP","entities":[{"offset":90,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 54624443\nЦена в таблице: 1371\nЦена WB: 1498\nСсылка на товар: https://www.wildberries.ru/catalog/54624443/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":533,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730544,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 54624443\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 1371\\n\\u0426\\u0435\\u043d\\u0430 WB: 1498\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/54624443/detail.aspx?targetUrl=SP","entities":[{"offset":90,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 54624699\nЦена в таблице: 1371\nЦена WB: 1498\nСсылка на товар: https://www.wildberries.ru/catalog/54624699/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":534,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730545,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 54624699\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 1371\\n\\u0426\\u0435\\u043d\\u0430 WB: 1498\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/54624699/detail.aspx?targetUrl=SP","entities":[{"offset":90,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 48059401\nЦена в таблице: 883\nЦена WB: 949\nСсылка на товар: https://www.wildberries.ru/catalog/48059401/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":535,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730545,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 48059401\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 883\\n\\u0426\\u0435\\u043d\\u0430 WB: 949\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/48059401/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
-Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '❗️Не совпадает цена\nАртикул: 43968564\nЦена в таблице: 580\nЦена WB: 667\nСсылка на товар: https://www.wildberries.ru/catalog/43968564/detail.aspx?targetUrl=SP'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":536,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730545,"text":"\\u2757\\ufe0f\\u041d\\u0435 \\u0441\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u0435\\u0442 \\u0446\\u0435\\u043d\\u0430\\n\\u0410\\u0440\\u0442\\u0438\\u043a\\u0443\\u043b: 43968564\\n\\u0426\\u0435\\u043d\\u0430 \\u0432 \\u0442\\u0430\\u0431\\u043b\\u0438\\u0446\\u0435: 580\\n\\u0426\\u0435\\u043d\\u0430 WB: 667\\n\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u043d\\u0430 \\u0442\\u043e\\u0432\\u0430\\u0440: https://www.wildberries.ru/catalog/43968564/detail.aspx?targetUrl=SP","entities":[{"offset":88,"length":68,"type":"url"}]}}'"
+Make request: "getUpdates" with data: "{'offset': 983234706, 'timeout': 20}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":556,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645989041,"text":"\\ud83d\\udc47 \\u0418\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044f \\u043f\\u043e \\"WB FBS / FBO Dushka (6%)\\""}}'"
+Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '😌 Совпадают все цены'}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":557,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645989041,"text":"\\ud83d\\ude0c \\u0421\\u043e\\u0432\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442 \\u0432\\u0441\\u0435 \\u0446\\u0435\\u043d\\u044b"}}'"
 Make request: "sendMessage" with data: "{'chat_id': 544490770, 'text': '✅ Проверка закончилась'}" and files "None"
-Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":537,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645730545,"text":"\\u2705 \\u041f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043a\\u0430 \\u0437\\u0430\\u043a\\u043e\\u043d\\u0447\\u0438\\u043b\\u0430\\u0441\\u044c"}}'"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
-Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
-Make request: "getUpdates" with data: "{'offset': 983234703, 'timeout': 20}" and files "None"
+Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":558,"from":{"id":5056907976,"is_bot":true,"first_name":"Oko_WB","username":"Oko_WB_bot"},"chat":{"id":544490770,"first_name":"Rosya","username":"salomanHere","type":"private"},"date":1645989041,"text":"\\u2705 \\u041f\\u0440\\u043e\\u0432\\u0435\\u0440\\u043a\\u0430 \\u0437\\u0430\\u043a\\u043e\\u043d\\u0447\\u0438\\u043b\\u0430\\u0441\\u044c"}}'"

@@ -37,9 +37,9 @@ async def check_price(message: types.Message):
         for item in wrong_data:
             notification = f'❗️Не совпадает цена\nАртикул: {item["article"]}\nЦена в таблице: {item["price"]}\nЦена WB: {item["wb_price"]}\nСсылка на товар: {item["url"]}'
             await message.answer(notification)
-
-    await message.answer('✅ Проверка закончилась')
+            
     print('Проверка закончилась.')
+    await message.answer('✅ Проверка закончилась')
 if __name__ == '__main__':
-    print('Бот запущен. Все логи записываются в файл output.log (Version:24.02.2022)')
+    print('Бот запущен. Все логи записываются в файл output.log (Version:27.02.2022)')
     executor.start_polling(dp, skip_updates=True)   
